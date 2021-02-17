@@ -1,0 +1,13 @@
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.exe
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.deps.json
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.runtimeconfig.json
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.runtimeconfig.dev.json
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.dll
+C:\source\codeworks\tastuff\firesides\SpaceGame\bin\Debug\netcoreapp3.1\SpaceGame.pdb
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.csprojAssemblyReference.cache
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.AssemblyInfoInputs.cache
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.AssemblyInfo.cs
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.csproj.CoreCompileInputs.cache
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.dll
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.pdb
+C:\source\codeworks\tastuff\firesides\SpaceGame\obj\Debug\netcoreapp3.1\SpaceGame.genruntimeconfig.cache
