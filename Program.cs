@@ -172,11 +172,13 @@ namespace SpaceGame
           AutoUpgrades[index].Quantity++;
           Stats[item.Name] = AutoUpgrades[index].Quantity;
         }
-        Console.Beep();
+        Console.Beep(1000, 90);
+        Console.Beep(1200, 90);
         Console.WriteLine($"You Purchezed 1 {item.Name}... tank you for you buzinez");
       }
       else
       {
+        Console.Beep(400, 450);
         Console.WriteLine($"you don't heav enough cheez to by {item.Name}... go away.");
       }
       //   Using a Readkey so the user has a moment to read the message before they continue.
