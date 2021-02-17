@@ -9,6 +9,7 @@ namespace SpaceGame
     static void Main(string[] args)
     {
       Console.WriteLine("Welcome to SharpMiner");
+      //   this creation of the space game class is what starts the game.  we don't need to store it to a variable cause we don't need to access it later.
       new SpaceGame();
     }
   }
@@ -20,8 +21,8 @@ namespace SpaceGame
     public string Name { get; private set; }
     public string Type { get; private set; }
     public int Price { get; set; }
-    public int Quantity { get; set; }
-    public int GenValue { get; private set; }
+    public decimal Quantity { get; set; }
+    public decimal GenValue { get; private set; }
 
     public Upgrade(string name, string type, int price, int quantity, int genValue)
     {
@@ -38,11 +39,11 @@ namespace SpaceGame
   {
     public bool Running { get; set; }
     public bool inShop { get; set; }
-    public int Cheese { get; private set; }
+    public decimal Cheese { get; private set; }
     public List<Upgrade> Shop { get; private set; }
     public List<Upgrade> ClickUpgrades { get; private set; }
     public List<Upgrade> AutoUpgrades { get; private set; }
-    public Dictionary<string, int> Stats { get; set; }
+    public Dictionary<string, decimal> Stats { get; set; }
 
     // The constructor is basically the new game setup, it creates an instance of all the Lists and Dictionaries needed, and creates the shop items, and gives the player 1 pick axe to start.
     public SpaceGame()
@@ -51,11 +52,11 @@ namespace SpaceGame
       Shop = new List<Upgrade>() { };
       ClickUpgrades = new List<Upgrade>() { new Upgrade("Pick Axe", "click", 0, 1, 1) };
       AutoUpgrades = new List<Upgrade>();
-      Stats = new Dictionary<string, int>();
+      Stats = new Dictionary<string, decimal>();
       Stats.Add("Pick Axe", 1);
       Shop.Add(new Upgrade("Pick Axe", "click", 25, 0, 1));
-      Shop.Add(new Upgrade("Cheese Drill", "click", 50, 0, 5));
-      Shop.Add(new Upgrade("Mousetronaut", "auto", 100, 0, 1));
+      Shop.Add(new Upgrade("Cheese Drill", "click", 100, 0, 5));
+      Shop.Add(new Upgrade("Mousetronaut", "auto", 50, 0, 1));
       Shop.Add(new Upgrade("Cheese Refiner", "auto", 1000, 0, 10));
       PlayGame();
     }
@@ -95,7 +96,6 @@ namespace SpaceGame
       {
         Cheese += miner.Quantity * miner.GenValue;
       });
-      Console.WriteLine($"Cheese:{Cheese}");
     }
 
     // iterates over automine objects and adds their Quantity * generation Value to you Cheese. Timer callbacks need to take in an object as a parameter.
@@ -221,7 +221,7 @@ namespace SpaceGame
       Console.WriteLine(moon);
       string message = "";
       message += $@"
-      Mine [Space],  Shop [tab], Quit[esc]
+      Mine [Space],  Shop [s], Quit[esc]
       Cheese: {Cheese}
       Stats:";
       foreach (var stat in Stats)
